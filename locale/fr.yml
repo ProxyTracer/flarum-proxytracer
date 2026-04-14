@@ -1,0 +1,17 @@
+proxytracer-proxytracer:
+  admin:
+    settings:
+      api_key_label: Clé API ProxyTracer
+      api_key_help: "Votre jeton API que vous pouvez obtenir sur <a>proxytracer.com</a>."
+      block_all_label: Bloquer tout l'accès au site
+      block_login_label: Bloquer les connexions
+      block_signup_label: Bloquer les inscriptions
+      api_timeout_label: Délai d'attente de l'API (millisecondes)
+      cache_expiry_label: Expiration du cache (heures)
+      fail_open_label: Autoriser l'accès en cas d'erreur API
+      fail_open_help: Si activé, les utilisateurs sont autorisés à passer si l'API ProxyTracer expire ou tombe en panne.
+      trust_cloudflare_label: Extraire les IP des en-têtes Cloudflare
+      trust_cloudflare_help: Requis si votre site est derrière Cloudflare pour lire précisément les IP des utilisateurs. Ne pas activer dans d'autres scénarios.
+      custom_block_message_label: Message de blocage personnalisé
+      ip_whitelist_label: Liste blanche d'IP
+      ip_whitelist_help: Entrez les adresses IP ou les plages CIDR pour contourner la vérification du proxy, séparées par des sauts de ligne.

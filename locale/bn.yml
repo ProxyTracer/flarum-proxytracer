@@ -1,0 +1,17 @@
+proxytracer-proxytracer:
+  admin:
+    settings:
+      api_key_label: ProxyTracer এপিআই কী (API Key)
+      api_key_help: "আপনার এপিআই টোকেন যা আপনি <a>proxytracer.com</a> থেকে পেতে পারেন।"
+      block_all_label: সমস্ত সাইট অ্যাক্সেস ব্লক করুন
+      block_login_label: লগইন ব্লক করুন
+      block_signup_label: সাইনআপ ব্লক করুন
+      api_timeout_label: এপিআই টাইমআউট (মিলিসেকেন্ড)
+      cache_expiry_label: ক্যাশে মেয়াদোত্তীর্ণ (ঘন্টা)
+      fail_open_label: এপিআই ত্রুটিতে অ্যাক্সেস দিন
+      fail_open_help: এটি চালু থাকলে, ProxyTracer এপিআই টাইমআউট বা ডাউন হলে ব্যবহারকারীদের প্রবেশ করতে দেওয়া হবে।
+      trust_cloudflare_label: ক্লাউডফ্লেয়ার হেডার থেকে আইপি (IP) বের করুন
+      trust_cloudflare_help: ব্যবহারকারীদের আইপি সঠিকভাবে পড়ার জন্য আপনার সাইটটি ক্লাউডফ্লেয়ারের পিছনে থাকলে এটি প্রয়োজন। অন্য কোনো পরিস্থিতিতে এটি চালু করবেন না।
+      custom_block_message_label: কাস্টম ব্লক মেসেজ
+      ip_whitelist_label: আইপি হোয়াইটলিস্ট
+      ip_whitelist_help: প্রক্সি চেক এড়িয়ে যেতে আইপি বা সিআইডিআর (CIDR) রেঞ্জ লিখুন, নতুন লাইন দিয়ে আলাদা করুন।

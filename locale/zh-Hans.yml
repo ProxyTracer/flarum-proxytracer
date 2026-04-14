@@ -1,0 +1,17 @@
+proxytracer-proxytracer:
+  admin:
+    settings:
+      api_key_label: ProxyTracer API 密钥
+      api_key_help: "您的 API 令牌，您可以从 <a>proxytracer.com</a> 获取。"
+      block_all_label: 阻止所有站点访问
+      block_login_label: 阻止登录
+      block_signup_label: 阻止注册
+      api_timeout_label: API 超时 (毫秒)
+      cache_expiry_label: 缓存过期时间 (小时)
+      fail_open_label: API 错误时允许访问 (Fail Open)
+      fail_open_help: 如果启用，当 ProxyTracer API 超时或宕机时，将允许用户通过。
+      trust_cloudflare_label: 从 Cloudflare 标头中提取 IP
+      trust_cloudflare_help: 如果您的站点在 Cloudflare 后面，则必须开启此选项才能准确读取用户 IP。在其他情况下请勿启用。
+      custom_block_message_label: 自定义拦截消息
+      ip_whitelist_label: IP 白名单
+      ip_whitelist_help: 输入 IP 或 CIDR 范围以绕过代理检查，每行一个。

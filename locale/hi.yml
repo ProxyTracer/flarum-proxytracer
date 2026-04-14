@@ -1,0 +1,17 @@
+proxytracer-proxytracer:
+  admin:
+    settings:
+      api_key_label: ProxyTracer API कुंजी (Key)
+      api_key_help: "आपका API टोकन जो आप <a>proxytracer.com</a> से प्राप्त कर सकते हैं।"
+      block_all_label: साइट का पूरा एक्सेस ब्लॉक करें
+      block_login_label: लॉगिन ब्लॉक करें
+      block_signup_label: साइनअप ब्लॉक करें
+      api_timeout_label: API टाइमआउट (मिलीसेकंड)
+      cache_expiry_label: कैश समाप्ति (घंटे)
+      fail_open_label: API त्रुटि पर एक्सेस दें (Fail Open)
+      fail_open_help: यदि यह सक्षम है, तो ProxyTracer API के टाइमआउट या डाउन होने पर उपयोगकर्ताओं को प्रवेश करने दिया जाएगा।
+      trust_cloudflare_label: क्लाउडफ्लेयर हेडर से IP निकालें
+      trust_cloudflare_help: उपयोगकर्ता के IP को सटीक रूप से पढ़ने के लिए आवश्यक है यदि आपकी साइट क्लाउडफ्लेयर के पीछे है। अन्य परिदृश्यों में इसे सक्षम न करें।
+      custom_block_message_label: कस्टम ब्लॉक संदेश
+      ip_whitelist_label: IP वाइटलिस्ट
+      ip_whitelist_help: प्रॉक्सी चेक को बायपास करने के लिए IP या CIDR रेंज दर्ज करें, नई लाइनों द्वारा अलग करें।

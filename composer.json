@@ -1,0 +1,91 @@
+{
+    "name": "proxytracer/flarum-proxytracer",
+    "description": "Block VPNs, Proxies, and Tor nodes from signing up, logging in, or accessing your Flarum forum.",
+    "keywords": [
+        "flarum",
+        "flarum-extension",
+        "security",
+        "vpn-blocker",
+        "proxy",
+        "tor",
+        "anti-spam"
+    ],
+    "type": "flarum-extension",
+    "license": "AGPL-3.0-or-later",
+    "require": {
+        "flarum/core": "^1.8"
+    },
+    "authors": [
+        {
+            "name": "ProxyTracer",
+            "email": "contact@proxytracer.com",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/proxytracer/flarum-proxytracer/issues",
+        "source": "https://github.com/proxytracer/flarum-proxytracer"
+    },
+    "autoload": {
+        "psr-4": {
+            "Proxytracer\\Proxytracer\\": "src/"
+        }
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "ProxyTracer",
+            "category": "security",
+            "icon": {
+                "name": "fas fa-shield-alt",
+                "color": "#000000",
+                "backgroundColor": "#ffffff"
+            }
+        },
+        "flarum-cli": {
+            "modules": {
+                "admin": true,
+                "forum": true,
+                "js": true,
+                "jsCommon": true,
+                "css": true,
+                "locale": true,
+                "gitConf": true,
+                "githubActions": true,
+                "prettier": true,
+                "typescript": true,
+                "bundlewatch": false,
+                "frontendTesting": true,
+                "backendTesting": true,
+                "phpstan": false,
+                "editorConfig": true,
+                "styleci": true
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload-dev": {
+        "psr-4": {
+            "Proxytracer\\Proxytracer\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": [
+            "@test:unit",
+            "@test:integration"
+        ],
+        "test:unit": "phpunit -c tests/phpunit.unit.xml",
+        "test:integration": "phpunit -c tests/phpunit.integration.xml",
+        "test:setup": "@php tests/integration/setup.php"
+    },
+    "scripts-descriptions": {
+        "test": "Runs all tests.",
+        "test:unit": "Runs all unit tests.",
+        "test:integration": "Runs all integration tests.",
+        "test:setup": "Sets up a database for use with integration tests. Execute this only once."
+    },
+    "require-dev": {
+        "flarum/testing": "^2.0",
+        "laravel/pint": "^1.29"
+    }
+}

@@ -1,0 +1,17 @@
+proxytracer-proxytracer:
+  admin:
+    settings:
+      api_key_label: Kunci API ProxyTracer
+      api_key_help: "Token API Anda yang bisa Anda dapatkan dari <a>proxytracer.com</a>."
+      block_all_label: Blokir Semua Akses Situs
+      block_login_label: Blokir Login
+      block_signup_label: Blokir Pendaftaran
+      api_timeout_label: Batas Waktu API (milidetik)
+      cache_expiry_label: Kedaluwarsa Cache (jam)
+      fail_open_label: Izinkan Akses Saat API Error
+      fail_open_help: Jika diaktifkan, pengguna diizinkan masuk jika API ProxyTracer habis waktu (timeout) atau down.
+      trust_cloudflare_label: Ekstrak IP dari Header Cloudflare
+      trust_cloudflare_help: Diperlukan jika situs Anda berada di belakang Cloudflare untuk membaca IP pengguna secara akurat. Jangan aktifkan ini dalam skenario lain.
+      custom_block_message_label: Pesan Blokir Kustom
+      ip_whitelist_label: Daftar Putih IP
+      ip_whitelist_help: Masukkan IP atau rentang CIDR untuk melewati pemeriksaan proxy, dipisahkan dengan baris baru.

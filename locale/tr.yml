@@ -1,0 +1,17 @@
+proxytracer-proxytracer:
+  admin:
+    settings:
+      api_key_label: ProxyTracer API Anahtarı
+      api_key_help: "<a>proxytracer.com</a> adresinden alabileceğiniz API jetonunuz."
+      block_all_label: Tüm Site Erişimini Engelle
+      block_login_label: Girişleri Engelle
+      block_signup_label: Kayıtları Engelle
+      api_timeout_label: API Zaman Aşımı (milisaniye)
+      cache_expiry_label: Önbellek Süresi (saat)
+      fail_open_label: API Hatasında Erişime İzin Ver
+      fail_open_help: Etkinleştirilirse, ProxyTracer API'si zaman aşımına uğrar veya çökerse kullanıcıların geçişine izin verilir.
+      trust_cloudflare_label: IP'leri Cloudflare Başlıklarından Çıkar
+      trust_cloudflare_help: Kullanıcı IP'lerini doğru bir şekilde okumak için siteniz Cloudflare arkasındaysa gereklidir. Bunu diğer senaryolarda etkinleştirmeyin.
+      custom_block_message_label: Özel Engelleme Mesajı
+      ip_whitelist_label: IP Beyaz Listesi
+      ip_whitelist_help: Proxy denetimini atlamak için IP'leri veya CIDR aralıklarını yeni satırlarla ayırarak girin.
