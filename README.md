@@ -65,7 +65,7 @@ You must configure your local reverse proxy to extract the true client IP from t
 First, define Cloudflare's IP ranges as trusted proxies in your server block configuration (outside of your location block). *Hardcoding these IPs at the Nginx level provides the absolute highest level of speed and security.*
 
 ```nginx
-# IPv4 Cloudflare IPs, see [https://www.cloudflare.com/ips/](https://www.cloudflare.com/ips/)
+# IPv4 Cloudflare IPs, see https://www.cloudflare.com/ips/
 set_real_ip_from 173.245.48.0/20;
 set_real_ip_from 103.21.244.0/22;
 set_real_ip_from 103.22.200.0/22;
