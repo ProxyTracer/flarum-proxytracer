@@ -13,9 +13,7 @@ use Throwable;
 
 class ProxyTracer
 {
-    public function __construct(protected SettingsRepositoryInterface $settings, protected Cache $cache, protected HttpClient $http, protected LoggerInterface $logger)
-    {
-    }
+    public function __construct(protected SettingsRepositoryInterface $settings, protected Cache $cache, protected HttpClient $http, protected LoggerInterface $logger) {}
 
     public function isProxy(string $ip): bool
     {
