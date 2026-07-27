@@ -8,7 +8,7 @@ app.initializers.add('proxytracer/flarum-proxytracer', () => {
       setting: 'proxytracer.api_key',
       label: app.translator.trans('proxytracer-proxytracer.admin.settings.api_key_label'),
       help: app.translator.trans('proxytracer-proxytracer.admin.settings.api_key_help', {
-        a: <a href="https://proxytracer.com/dashboard" target="_blank" />
+        a: <a href="https://proxytracer.com/dashboard" target="_blank" />,
       }),
       type: 'password',
     })
