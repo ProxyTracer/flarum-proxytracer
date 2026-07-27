@@ -17,14 +17,8 @@ use Psr\Http\Server\RequestHandlerInterface;
 
 class BlockProxyListeners implements MiddlewareInterface
 {
-    protected SettingsRepositoryInterface $settings;
-
-    protected ProxyTracer $proxyTracer;
-
-    public function __construct(SettingsRepositoryInterface $settings, ProxyTracer $proxyTracer)
+    public function __construct(protected SettingsRepositoryInterface $settings, protected ProxyTracer $proxyTracer)
     {
-        $this->settings = $settings;
-        $this->proxyTracer = $proxyTracer;
     }
 
     public function process(ServerRequestInterface $request, RequestHandlerInterface $handler): ResponseInterface

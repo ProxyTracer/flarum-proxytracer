@@ -13,20 +13,8 @@ use Throwable;
 
 class ProxyTracer
 {
-    protected SettingsRepositoryInterface $settings;
-
-    protected Cache $cache;
-
-    protected HttpClient $http;
-
-    protected LoggerInterface $logger;
-
-    public function __construct(SettingsRepositoryInterface $settings, Cache $cache, HttpClient $http, LoggerInterface $logger)
+    public function __construct(protected SettingsRepositoryInterface $settings, protected Cache $cache, protected HttpClient $http, protected LoggerInterface $logger)
     {
-        $this->settings = $settings;
-        $this->cache = $cache;
-        $this->http = $http;
-        $this->logger = $logger;
     }
 
     public function isProxy(string $ip): bool
