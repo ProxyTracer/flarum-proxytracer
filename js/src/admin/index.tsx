@@ -2,7 +2,7 @@ import app from 'flarum/admin/app';
 import m from 'mithril';
 
 app.initializers.add('proxytracer/flarum-proxytracer', () => {
-  app.extensionData
+  app.registry
     .for('proxytracer-proxytracer')
     .registerSetting({
       setting: 'proxytracer.api_key',
